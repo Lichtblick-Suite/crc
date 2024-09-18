@@ -1,8 +1,8 @@
-# @foxglove/crc
+# @lichtblick/crc
 
 Fast CRC32 computation in TypeScript
 
-[![npm version](https://img.shields.io/npm/v/@foxglove/crc)](https://www.npmjs.com/package/@foxglove/crc) ![](https://img.shields.io/badge/dependencies-0-green)
+[![npm version](https://img.shields.io/npm/v/@lichtblick/crc)](https://www.npmjs.com/package/@lichtblick/crc) ![](https://img.shields.io/badge/dependencies-0-green)
 
 ## Introduction
 
@@ -27,7 +27,7 @@ Note: Since the CRC algorithm works with unsigned data, the `crc32` and `crc32Fi
 ## Usage
 
 ```ts
-import { crc32 } from "@foxglove/crc";
+import { crc32 } from "@lichtblick/crc";
 
 const data = new Uint8Array(...);
 
@@ -35,7 +35,7 @@ const crc = crc32(data);
 ```
 
 ```ts
-import { crc32Init, crc32Update, crc32Final } from "@foxglove/crc";
+import { crc32Init, crc32Update, crc32Final } from "@lichtblick/crc";
 
 let crc = crc32Init();
 while (/* more data available */) {
@@ -82,14 +82,10 @@ For further information about CRCs and their computation, see:
 
 ## License
 
-@foxglove/crc is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+@lichtblick/crc is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Releasing
 
 1. Run `yarn version --[major|minor|patch]` to bump version
 2. Run `git push && git push --tags` to push new tag
 3. GitHub Actions will take care of the rest
-
-## Stay in touch
-
-Join our [Slack channel](https://foxglove.dev/slack) to ask questions, share feedback, and stay up to date on what our team is working on.

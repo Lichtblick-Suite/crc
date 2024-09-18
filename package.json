@@ -1,7 +1,7 @@
 {
-  "name": "@foxglove/crc",
+  "name": "@lichtblick/crc",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Fast CRC32 computation in TypeScript",
   "license": "MIT",
   "keywords": [
@@ -11,12 +11,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/foxglove/crc.git"
+    "url": "https://github.com/Lichtblick-Suite/crc.git"
   },
   "author": {
-    "name": "Foxglove",
-    "email": "contact@foxglove.dev",
-    "url": "https://foxglove.dev/"
+    "name": "Lichtblick",
+    "email": "lichtblick@bmwgroup.com"
   },
   "module": "dist/esm/src/index.js",
   "main": "dist/cjs/src/index.js",
@@ -35,12 +34,12 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@foxglove/eslint-plugin": "0.22.1",
     "@foxglove/tsconfig": "2.0.0",
+    "@lichtblick/eslint-plugin": "1.0.1",
     "@types/crc": "3.8.3",
     "@types/jest": "29.5.12",
-    "@typescript-eslint/eslint-plugin": "5.62.0",
-    "@typescript-eslint/parser": "5.62.0",
+    "@typescript-eslint/eslint-plugin": "^6",
+    "@typescript-eslint/parser": "^8.6.0",
     "benny": "3.7.1",
     "crc": "4.3.2",
     "crc-32": "1.2.2",
