@@ -34,7 +34,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@foxglove/tsconfig": "2.0.0",
+    "@lichtblick/tsconfig": "1.0.0",
     "@lichtblick/eslint-plugin": "1.0.1",
     "@types/crc": "3.8.3",
     "@types/jest": "29.5.12",
