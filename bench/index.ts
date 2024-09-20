@@ -35,8 +35,8 @@ function generateCrc32TableBranchless(polynomial: number) {
 
 function crcUpdateNaive(prev: number, polynomial: number, data: Uint8Array): number {
   let r = prev;
-  for (let i = 0; i < data.length; i++) {
-    r ^= data[i]!;
+  data.forEach((item) => {
+    r ^= item;
     r = ((r & 1) * polynomial) ^ (r >>> 1);
     r = ((r & 1) * polynomial) ^ (r >>> 1);
     r = ((r & 1) * polynomial) ^ (r >>> 1);
@@ -45,7 +45,7 @@ function crcUpdateNaive(prev: number, polynomial: number, data: Uint8Array): num
     r = ((r & 1) * polynomial) ^ (r >>> 1);
     r = ((r & 1) * polynomial) ^ (r >>> 1);
     r = ((r & 1) * polynomial) ^ (r >>> 1);
-  }
+  });
   return r;
 }
 

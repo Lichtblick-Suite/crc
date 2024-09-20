@@ -1,6 +1,6 @@
 extends:
-  - plugin:@foxglove/base
-  - plugin:@foxglove/jest
+  - plugin:@lichtblick/base
+  - plugin:@lichtblick/jest
 
 env:
   browser: true
@@ -19,6 +19,6 @@ rules:
 overrides:
   - files: ["*.ts", "*.tsx"]
     extends:
-      - plugin:@foxglove/typescript
+      - plugin:@lichtblick/typescript
     parserOptions:
       project: tsconfig.eslint.json
