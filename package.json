@@ -1,7 +1,7 @@
 {
   "name": "@lichtblick/crc",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fast CRC32 computation in TypeScript",
   "license": "MIT",
   "keywords": [
@@ -34,8 +34,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@lichtblick/tsconfig": "1.0.0",
     "@lichtblick/eslint-plugin": "1.0.1",
+    "@lichtblick/tsconfig": "1.0.0",
     "@types/crc": "3.8.3",
     "@types/jest": "29.5.12",
     "@typescript-eslint/eslint-plugin": "^6",
@@ -58,5 +58,6 @@
     "ts-jest": "29.1.2",
     "ts-node": "10.9.2",
     "typescript": "5.4.5"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
